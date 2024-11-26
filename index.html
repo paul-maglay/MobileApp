@@ -20,6 +20,11 @@
             height: 300px;
         }
     </style>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('service-worker.js');
+        };
+    </script>
 </head>
 <body>
     <div id="app"><!--Creating the element where vue will be mounted on-->
